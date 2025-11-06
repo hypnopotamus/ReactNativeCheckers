@@ -1,4 +1,4 @@
-import type { RootState } from '@/app/store';
+import type { RootState } from '@/store';
 import type { PayloadAction } from '@reduxjs/toolkit';
 import { createSlice } from '@reduxjs/toolkit';
 import { initialBoard, movePiece as moveGamePiece, Position } from './board';

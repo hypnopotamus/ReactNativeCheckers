@@ -4,7 +4,7 @@ import { Stack } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
 import 'react-native-reanimated';
 import { Provider } from 'react-redux';
-import { store } from './store';
+import { store } from '../store';
 
 export const unstable_settings = {
   anchor: '(tabs)',
@@ -19,7 +19,6 @@ export default function RootLayout() {
         <Stack>
           <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
           <Stack.Screen name="modal" options={{ presentation: 'modal', title: 'Modal' }} />
-          <Stack.Screen name="checkers" />
         </Stack>
         <StatusBar style="auto" />
       </ThemeProvider>
